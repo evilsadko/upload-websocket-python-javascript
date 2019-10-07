@@ -1,10 +1,10 @@
 # upload-websocket-python-javascript
 Загрузка файлов с помощью WebSoket
-<p><strong>Клиент</strong> - javascript:</p>
+<h3><strong>Клиент</strong> - javascript:</h3>
    <li>нарезаю файл на части</li>
    <li>кодирую в base64</li> 
    <li>отправляю</li>
-<p><strong>Сервер</strong> - python:</p>
+<h3><strong>Сервер</strong> - python:</h3>
    <li>получаю base64</li> 
    <li>декодирую base64</li> 
    <li>сохраняю файл</li>
