@@ -10,6 +10,7 @@
    <li>сохраняем файл</li>
    
 # Запуск
+Измените IP в upload.html
    ```
    python svup.py
    ```
