@@ -55,8 +55,7 @@ class ImageWebSocket(tornado.websocket.WebSocketHandler):
     def on_close(self):
         ImageWebSocket.clients.remove(self)
         print("WebSocket closed from: " + self.request.remote_ip)
-        #if len(ImageWebSocket.clients) == 0:
-            #camera.request_stop()
+
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
@@ -65,12 +64,10 @@ class MainHandler(tornado.web.RequestHandler):
 app = tornado.web.Application([
         (r"/", MainHandler),
         (r"/websocket", ImageWebSocket),
-        #(r"/(robots-AI.jpg)", tornado.web.StaticFileHandler, {'path':'./'}),
-        #(r"/(.*)", tornado.web.StaticFileHandler, {'path':'./', 'default_filename': 'index.html'}),
     ])
 app.listen(8800)
 
-print("Starting server: http://178.158.131.41:8800/")
+print("Starting server: http://xxx.xx.xx.xxx:8800/") # IP
 
 tornado.ioloop.IOLoop.current().start()
 
